@@ -1,0 +1,64 @@
+.Carrito {
+  display: block;
+  background-color: #a8cbd6;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.Carrito-Titulo {
+  justify-content: center;
+}
+
+.Carrito-TitulosX {
+  margin: 10px 10px;
+}
+
+.Carrito-TitulosX p {
+  display: inline-block;
+  text-align: center;
+}
+
+.Carrito-TitulosX p:nth-child(1) {
+  width: 40%;
+}
+
+.Carrito-TitulosX p:nth-child(2) {
+  width: 14%;
+}
+
+.Carrito-TitulosX p:nth-child(3) {
+  width: 23%;
+}
+
+.Carrito-TitulosX p:nth-child(4) {
+  width: 23%;
+}
+
+.Carrito-Footer {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Carrito-Footer p {
+  margin: 4px auto 4px 15px;
+}
+
+.Carrito-Footer-Botones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Carrito-Footer button {
+  border-radius: 5px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.Carrito-Footer button:hover {
+  background-color: gray;
+}

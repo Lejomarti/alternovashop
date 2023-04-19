@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.Contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px; /* opcional: agregar un espacio entre las columnas */
+}
+
+footer{
+  background-color: #282c34;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin: 10px auto 0;
+
+}

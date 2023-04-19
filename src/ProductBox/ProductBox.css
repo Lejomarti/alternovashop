@@ -1,0 +1,75 @@
+.ProductBox-Container {
+  background-color: rgb(226, 226, 226);
+  width: 2050x;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+}
+
+.Product-name {
+  margin: 10px 10px;
+  font-weight: 700;
+  height: 40px;
+}
+
+.ProductBox-Imagen {
+  margin-top: 2px;
+  width: 250px;
+  height: 250px;
+}
+
+.ProductBox-Footer {
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  justify-content: space-between;
+  margin: 2px;
+  padding-bottom: 5px;
+}
+
+.ProductBox-Footer button {
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.ProductBox-Footer-Counter {
+  display: flex;
+  flex-direction: row;
+}
+
+.ProductBox-Footer-Counter p {
+  margin: 0 10px;
+}
+
+.ProductBox-Footer-Counter button {
+  border: none;
+  width: 25px;
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.ProductBox-Footer-Counter button:hover {
+  background-color: gray;
+}
+
+.ProductBox-Button {
+  border: none;
+  height: auto;
+  width: 100px;
+  cursor: pointer;
+}
+
+.ProductBox-Button:hover {
+  background-color: gray;
+}
+
+.stock {
+  font-size: small;
+  position: relative;
+  margin: 0;
+  top: -15px;
+  left: -95px;
+  height: 0;
+}
