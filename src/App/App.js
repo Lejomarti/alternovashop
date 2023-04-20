@@ -11,6 +11,12 @@ import { CarritoList } from "../CarritoList";
 import json from "./productos.json";
 
 function App() {
+  const [allProducts, setAllProducts] = React.useState([]);
+  const [total, setTotal] = React.useState(0);
+  const [jsonProduct, setJsonProduct] = React.useState("");
+
+
+
   return (
     <React.Fragment>
       <Logo />
@@ -19,10 +25,10 @@ function App() {
           <SearchBar name="barra de busqueda" />
           <ProductList>
             {json.products.map((item, index) => {
-              
               return (
-
                 <ProductBox
+                  allProducts={allProducts}
+                  setAllProducts={setAllProducts}
                   key={index}
                   nombre={item.name}
                   precio={item.unit_price}
@@ -33,9 +39,27 @@ function App() {
           </ProductList>
         </ProductContainer>
 
-        <Carrito titulo="Carrito">
-          <CarritoList />
-          <CarritoList />
+        <Carrito
+          titulo="Carrito"
+          allProducts={allProducts}
+          setAllProducts={setAllProducts}
+          total={total}
+          setTotal={setTotal}
+          jsonProduct={jsonProduct}
+          setJsonProduct={setJsonProduct}
+        >
+          {allProducts.map((item, index) => {
+            return (
+              <CarritoList
+                key={index}
+                nombre={item.nombre}
+                precio={item.precio}
+                cantidad={item.cantidad}
+                total={total}
+                setTotal={setTotal}
+              />
+            );
+          })}
         </Carrito>
       </div>
       <footer>

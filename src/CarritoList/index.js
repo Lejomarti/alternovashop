@@ -1,15 +1,21 @@
 import React from "react";
-import "./CarritoList.css"
+import "./CarritoList.css";
 
-function CarritoList(){
-    return  <div className="Carrito-List">
-    <div className="Producto">
-      <p>Iphone</p>
-      <p> 2</p>
-      <p>$500</p>
-      <p>$1000</p>
+function CarritoList({nombre, precio, cantidad ,total,setTotal}) {
+ React.useEffect(()=> {
+  setTotal(total + precio*cantidad)
+ }, [setTotal])
+
+  return (
+    <div className="Carrito-List">
+      <div className="Producto">
+        <p>{nombre}</p>
+        <p> {cantidad}</p>
+        <p>${precio}</p>
+        <p>${precio*cantidad}</p>
+      </div>
     </div>
-  </div>
+  );
 }
 
-export {CarritoList}
+export { CarritoList };
