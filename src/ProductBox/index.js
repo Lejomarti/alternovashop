@@ -10,6 +10,7 @@ function ProductBox({ nombre, precio, stock, allProducts, setAllProducts }) {
     cantidad: 0,
   });
 
+
   const [contador, setContador] = React.useState(0);
 
   React.useEffect(() => {
@@ -34,8 +35,8 @@ function ProductBox({ nombre, precio, stock, allProducts, setAllProducts }) {
       0
     );
     if (totalCantidad + contador <= stock) {
-      setAllProducts(...allProducts, producto);
-      // setAllProducts(currentProducts)
+      setAllProducts([...allProducts, producto]);
+      // setAllProducts()
       setContador(0);
     } else {
       alert("No se puede agregar esa cantidad de productos al carrito");
@@ -44,6 +45,7 @@ function ProductBox({ nombre, precio, stock, allProducts, setAllProducts }) {
   };
   const sumar = () => {
     if (contador < stock) {
+      console.log(allProducts)
       setContador(contador + 1);
     }
   };

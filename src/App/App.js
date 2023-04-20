@@ -52,8 +52,8 @@ function App() {
             return (
               <CarritoList
                 key={index}
-                nombre={item.nombre}
-                precio={item.precio}
+                nombre={item.nombre.nombre}
+                precio={item.precio.precio}
                 cantidad={item.cantidad}
                 total={total}
                 setTotal={setTotal}
