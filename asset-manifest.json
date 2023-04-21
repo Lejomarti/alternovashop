@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Lejomarti/alternovashop/static/css/main.82933e6c.css",
-    "main.js": "/Lejomarti/alternovashop/static/js/main.36a1f6c4.js",
-    "static/media/Iphone14.jpg": "/Lejomarti/alternovashop/static/media/Iphone14.34c6f91bd7832c77e485.jpg",
-    "static/media/LogoalternovaShop_Instagram.svg": "/Lejomarti/alternovashop/static/media/LogoalternovaShop_Instagram.1d8d6237c72c306c55e8bde2e6be896f.svg",
-    "index.html": "/Lejomarti/alternovashop/index.html",
-    "main.82933e6c.css.map": "/Lejomarti/alternovashop/static/css/main.82933e6c.css.map",
-    "main.36a1f6c4.js.map": "/Lejomarti/alternovashop/static/js/main.36a1f6c4.js.map"
+    "main.css": "/alternovashop/static/css/main.82933e6c.css",
+    "main.js": "/alternovashop/static/js/main.751ab109.js",
+    "static/media/Iphone14.jpg": "/alternovashop/static/media/Iphone14.34c6f91bd7832c77e485.jpg",
+    "static/media/LogoalternovaShop_Instagram.svg": "/alternovashop/static/media/LogoalternovaShop_Instagram.1d8d6237c72c306c55e8bde2e6be896f.svg",
+    "index.html": "/alternovashop/index.html",
+    "main.82933e6c.css.map": "/alternovashop/static/css/main.82933e6c.css.map",
+    "main.751ab109.js.map": "/alternovashop/static/js/main.751ab109.js.map"
   },
   "entrypoints": [
     "static/css/main.82933e6c.css",
-    "static/js/main.36a1f6c4.js"
+    "static/js/main.751ab109.js"
   ]
 }
