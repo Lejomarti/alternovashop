@@ -43,7 +43,7 @@
   grid-gap: 10px; /* opcional: agregar un espacio entre las columnas */
 }
 
-footer{
+footer {
   background-color: #282c34;
   height: 50px;
   display: flex;
@@ -51,5 +51,8 @@ footer{
   text-align: center;
   color: white;
   margin: 10px auto 0;
-
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #c03369;
 }

@@ -1,9 +1,10 @@
 .Carrito {
   display: block;
-  background-color: #a8cbd6;
+  background-color: #e7e7e7;
   height: auto;
   padding: 10px;
   text-align: center;
+  border-left: 6px solid #c03369;
 }
 
 .Carrito-Titulo {

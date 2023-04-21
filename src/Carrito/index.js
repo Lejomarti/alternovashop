@@ -1,7 +1,5 @@
 import React from "react";
-import { ReactDOM } from "react";
 import "./Carrito.css";
-import { CarritoList } from "../CarritoList";
 
 function Carrito({jsonProduct,setJsonProduct,total,setTotal, allProducts, setAllProducts, titulo, children }) {
   const onVaciarCarrito = () => {
@@ -11,14 +9,16 @@ function Carrito({jsonProduct,setJsonProduct,total,setTotal, allProducts, setAll
 
   const imprimirJSON = () =>{
     setJsonProduct({...allProducts,PrecioTotal:total})
-      console.log(jsonProduct)
-    // const jsonData = JSON.stringify(jsonProduct);
-    // const fileData = new Blob([jsonData], { type: 'application/json' });
-    // const url = URL.createObjectURL(fileData);
-    // const link = document.createElement('a');
-    // link.href = url;
-    // link.download = 'InfoEnJson.json';
-    // link.click();
+    if(jsonProduct.PrecioTotal>0){
+
+      const jsonData = JSON.stringify(jsonProduct);
+      const fileData = new Blob([jsonData], { type: 'application/json' });
+      const url = URL.createObjectURL(fileData);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'InfoEnJson.json';
+      link.click();
+    }
   }
 
 

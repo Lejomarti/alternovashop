@@ -14,16 +14,19 @@ function App() {
   const [allProducts, setAllProducts] = React.useState([]);
   const [total, setTotal] = React.useState(0);
   const [jsonProduct, setJsonProduct] = React.useState("");
-
-
+  const [searchValue, setSearchValue] = React.useState("");
 
   return (
     <React.Fragment>
       <Logo />
       <div className="Contenido">
         <ProductContainer titulo="Productos">
-          <SearchBar name="barra de busqueda" />
-          <ProductList>
+          <SearchBar
+            name="barra de busqueda"
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
+          />
+          <ProductList searchValue={searchValue}>
             {json.products.map((item, index) => {
               return (
                 <ProductBox
