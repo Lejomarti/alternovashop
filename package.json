@@ -38,7 +38,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "homepage":"https://github.com/Lejomarti/alternovashop"
-  }
+    "gh-pages": "^5.0.0"
+  },
+  "homepage": "https://github.com/Lejomarti/alternovashop"
 }
